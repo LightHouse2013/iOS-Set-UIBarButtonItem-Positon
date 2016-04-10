@@ -15,7 +15,7 @@
 	UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:settingButton];
 ```
 
-[系统原生按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/systemdefultRightBarButtonPositon.png)
+![系统原生按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/systemdefultRightBarButtonPositon.png)
 
 *  按钮右侧与屏幕右侧有20 point的间距，按钮图标居中显示，需求来讲该按钮是偏左了。当然你可以修改图标的位置也可以。
 *  代码来修改是不是更灵活？当然是了，如果再需求变更也不用重新切图了。
@@ -32,7 +32,7 @@
 	
 	UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:view];
 ```
-[修改后按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/motifyAfterPositon.png)
+![修改后按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/motifyAfterPositon.png)
 
 
 
