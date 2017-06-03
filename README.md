@@ -38,6 +38,6 @@
 * 效果如图:       
   ![修改后按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/motifyAfterPositon.png)
 
-* 希望你对有所帮助，之前博客(http://blog.csdn.net/zhangwenhai001)
+* 希望你对有所帮助，简书(http://www.jianshu.com/u/67d60ad73d4a)
 
 
