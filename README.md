@@ -7,12 +7,12 @@
 
 * 代码如下：
 ``` Objective-C
-	UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	[settingButton setFrame:CGRectMake(0.0, 0.0, 44.0, 44.0)];
-	[settingButton addTarget:self action:@selector(settingButtonOnClicked:) forControlEvents:UIControlEventTouchUpInside];
-	[settingButton setImage:[UIImage imageNamed:@"ic_main_setting"] forState:UIControlStateNormal];
-	
-	UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:settingButton];
+UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+[settingButton setFrame:CGRectMake(0.0, 0.0, 44.0, 44.0)];
+[settingButton addTarget:self action:@selector(settingButtonOnClicked:) forControlEvents:UIControlEventTouchUpInside];
+[settingButton setImage:[UIImage imageNamed:@"ic_main_setting"] forState:UIControlStateNormal];
+
+UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:settingButton];
 ```
 * 效果如图：       
   ![系统原生按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/systemdefultRightBarButtonPositon.png)
@@ -22,18 +22,18 @@
 
 * 修改后代码如下:
 ```Objective-C
-	UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	
-	//修改按钮向右偏移10 point
-	[settingButton setFrame:CGRectMake(10.0, 0.0, 44.0, 44.0)];
-	[settingButton addTarget:self action:@selector(settingButtonOnClicked:) forControlEvents:UIControlEventTouchUpInside];
-	[settingButton setImage:[UIImage imageNamed:@"ic_main_setting"] forState:UIControlStateNormal];
-	
-	//修改方法
-	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 44.0, 44.0)];
-	[view addSubview:settingButton];
-	
-	UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+
+//修改按钮向右偏移10 point
+[settingButton setFrame:CGRectMake(10.0, 0.0, 44.0, 44.0)];
+[settingButton addTarget:self action:@selector(settingButtonOnClicked:) forControlEvents:UIControlEventTouchUpInside];
+[settingButton setImage:[UIImage imageNamed:@"ic_main_setting"] forState:UIControlStateNormal];
+
+//修改方法
+UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 44.0, 44.0)];
+[view addSubview:settingButton];
+
+UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:view];
 ```
 * 效果如图:       
   ![修改后按钮位置效果](https://github.com/zhang33121/iOS-Set-UIBarButtonItem-Positon/blob/master/motifyAfterPositon.png)
